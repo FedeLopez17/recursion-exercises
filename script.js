@@ -93,3 +93,31 @@ function totalIntegersSolution(array) {
 
   return total + totalIntegersSolution(array);
 }
+
+function sumSquares(numbersArr) {
+  // Base case
+  if (!numbersArr.length) return 0;
+
+  // Recursion case
+  let total = 0;
+  const firstElement = numbersArr.shift();
+
+  if (Array.isArray(firstElement)) {
+    total += sumSquares(firstElement);
+  } else {
+    total += firstElement * firstElement;
+  }
+
+  return (total += sumSquares(numbersArr));
+}
+
+function replicate(num, amountOfTimes, outputArray = []) {
+  // Base case
+  if (amountOfTimes <= 0) return outputArray;
+
+  // Recursion case
+  outputArray.push(num);
+  replicate(num, --amountOfTimes, outputArray);
+
+  return outputArray;
+}

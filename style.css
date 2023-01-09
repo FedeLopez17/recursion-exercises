@@ -18,6 +18,11 @@ body {
   font-weight: 500;
   background-color: #e6e6e6;
   padding: 1px 5px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.usage-indication {
+  font-family: "Roboto", sans-serif;
 }
 
 section.code {

@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Recursion exercises</title>
   </head>
   <body>
@@ -36,8 +39,8 @@
         number passed in.<br />
 
         <span class="bold">Example:</span>
-        <span class="function-call-example">sumRange(3)</span> returns 6, since
-        1 + 2 + 3 = 6.
+        <span class="function-call-example">sumRange(3)</span> returns
+        <span class="bold">6</span>.
       </p>
     </article>
 
@@ -49,7 +52,8 @@
         <br />
 
         <span class="bold">Example:</span>
-        <span class="function-call-example">power(2, 4)</span> returns 16.
+        <span class="function-call-example">power(2, 4)</span> returns
+        <span class="bold">16</span>.
       </p>
     </article>
 
@@ -62,7 +66,8 @@
         <br />
 
         <span class="bold">Example:</span>
-        <span class="function-call-example">factorial(5)</span> returns 120.
+        <span class="function-call-example">factorial(5)</span> returns
+        <span class="bold">120</span>.
       </p>
     </article>
 
@@ -82,7 +87,7 @@
         <span class="function-call-example"
           >all([1,2,9], (num) => {return num &lt 7})</span
         >
-        returns false.
+        returns <span class="bold">false</span>.
       </p>
     </article>
 
@@ -96,7 +101,7 @@
 
         <span class="bold">Example:</span>
         <span class="function-call-example">productOfArray([1,2,3,10])</span>
-        returns 60.
+        returns <span class="bold">60</span>.
       </p>
     </article>
 
@@ -108,44 +113,81 @@
         a nested object. It returns true if the object contains that value.
         <br />
 
-        <span class="bold">Example:</span></br> 
-        <section class="code">
+        <span class="bold">Example:</span><br />
+      </p>
+
+      <section class="code">
         <!-- Here I used the non-breaking space entity (&nbsp) to create the indentation -->
-        const nestedObject = {</br> 
-        &nbsp&nbsp data: {</br>  
-        &nbsp&nbsp&nbsp&nbsp info: {</br> 
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp stuff: {</br> 
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp thing: {</br> 
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp moreStuff: {</br> 
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp magicNumber: 44,</br> 
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp something: 'foo2'</br> 
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },</br> 
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },</br> 
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },</br> 
-        &nbsp&nbsp&nbsp&nbsp },</br> 
-        &nbsp&nbsp },</br> 
-        };</br>
-        </section>
-        <span class="function-call-example">
-          contains(nestedObject, 44) 
-        </span>
-        returns true, while 
-        <span class="function-call-example">
-          contains(nestedObject, "foo") 
-        </span>
-        returns false.
+        const nestedObject = {<br />
+        &nbsp&nbsp data: {<br />
+        &nbsp&nbsp&nbsp&nbsp info: {<br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp stuff: {<br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp thing: {<br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp moreStuff: {<br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        magicNumber: 44,<br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp something:
+        'foo2'<br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },<br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },<br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },<br />
+        &nbsp&nbsp&nbsp&nbsp },<br />
+        &nbsp&nbsp },<br />
+        };<br />
+      </section>
+      <p>
+        <span class="function-call-example"> contains(nestedObject, 44)</span>
+        returns <span class="bold">true</span>, while
+        <span class="function-call-example">contains(nestedObject, "foo")</span>
+        returns <span class="bold">false</span>.
       </p>
     </article>
 
     <article>
-      <h2><span class="bold">Exercise 7:</span> Parse a multi-dimensional array.</h2>
+      <h2>
+        <span class="bold">Exercise 7:</span> Parse a multi-dimensional array.
+      </h2>
       <p>
-        Write a function called <span class="function-name">totalIntegers</span> 
-        which, given a multi-dimensional integer array, returns the amount of integers stored within.<br />
+        Write a function called
+        <span class="function-name">totalIntegers</span> which, given a
+        multi-dimensional integer array, returns the amount of integers stored
+        within.<br />
         <span class="bold">Example:</span>
-        <span class="function-call-example">totalIntegers([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]])</span> returns 7.
+        <span class="function-call-example"
+          >totalIntegers([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]])</span
+        >
+        returns <span class="bold">7</span>.
       </p>
     </article>
 
+    <article>
+      <h2><span class="bold">Exercise 8:</span> Sum squares.</h2>
+      <p>
+        Write a function called
+        <span class="function-name">sumSquares</span> that, given an array, sums
+        the squares of the numbers within the array and returns the result. The
+        array could be multi-dimensional.<br />
+        <span class="bold">Example:</span><br />
+        Both
+        <span class="function-call-example">sumSquares([[1,2],3])</span>
+        and
+        <span class="function-call-example">sumSquares([1,2,3])</span>
+        should return <span class="bold">14</span>.
+      </p>
+    </article>
+
+    <article>
+      <h2><span class="bold">Exercise 9:</span> Repeat number.</h2>
+      <p>
+        Write a function called
+        <span class="function-name">replicate</span> that takes two numbers as
+        arguments and returns an array containing the first number repeated as
+        many times as the second number argument's value.<br />
+        If the times argument is negative, return an empty array.<br />
+        <span class="bold">Example:</span><br />
+        <span class="function-call-example">replicate(5, 3)</span>
+        should return <span class="bold">[5, 5, 5]</span>.
+      </p>
+    </article>
   </body>
 </html>
