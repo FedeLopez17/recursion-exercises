@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <title>Recursion exercises</title>
   </head>
   <body>
@@ -81,8 +78,9 @@
         <br />
 
         <span class="bold">Example:</span>
+        <!-- The "&lt" below is the character entity for the less than symbol. https://www.w3schools.com/html/html_entities.asp -->
         <span class="function-call-example"
-          >all([1,2,9], (num) => {return num < 7})</span
+          >all([1,2,9], (num) => {return num &lt 7})</span
         >
         returns false.
       </p>
@@ -99,6 +97,43 @@
         <span class="bold">Example:</span>
         <span class="function-call-example">productOfArray([1,2,3,10])</span>
         returns 60.
+      </p>
+    </article>
+
+    <article>
+      <h2><span class="bold">Exercise 6:</span> Search JavaScript object.</h2>
+      <p>
+        Write a function called
+        <span class="function-name">contains</span> that searches for a value in
+        a nested object. It returns true if the object contains that value.
+        <br />
+
+        <span class="bold">Example:</span></br> 
+        <section class="code">
+        <!-- Here I used the non-breaking space entity (&nbsp) to create the indentation -->
+        const nestedObject = {</br> 
+        &nbsp&nbsp data: {</br>  
+        &nbsp&nbsp&nbsp&nbsp info: {</br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp stuff: {</br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp thing: {</br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp moreStuff: {</br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp magicNumber: 44,</br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp something: 'foo2'</br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },</br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },</br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp },</br> 
+        &nbsp&nbsp&nbsp&nbsp },</br> 
+        &nbsp&nbsp },</br> 
+        };</br>
+        </section>
+        <span class="function-call-example">
+          contains(nestedObject, 44) 
+        </span>
+        returns true, while 
+        <span class="function-call-example">
+          contains(nestedObject, "foo") 
+        </span>
+        returns false.
       </p>
     </article>
   </body>

@@ -20,6 +20,15 @@ body {
   padding: 1px 5px;
 }
 
+section.code {
+  background-color: #e6e6e6;
+  font-family: "Roboto Mono", monospace;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
 header,
 article {
   width: 90%;
