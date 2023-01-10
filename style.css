@@ -6,6 +6,7 @@ body {
   align-items: center;
   gap: 20px;
   line-height: 1.6;
+  padding: 50px 0 100px;
 }
 
 .bold {
@@ -42,4 +43,9 @@ article {
 article > p {
   line-height: 1.8;
   max-width: 90ch;
+}
+
+img#meme {
+  max-width: 90%;
+  margin: 30px 0;
 }
